@@ -11,10 +11,12 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1594888736,,"wq!"
+:wq1
+|2,0,1594888734,,"wq1"
 :q!
 |2,0,1594859490,,"q!"
-:wq!
-|2,0,1594802775,,"wq!"
 
 # Search String History (newest to oldest):
 
@@ -27,28 +29,34 @@
 # Registers:
 
 # File marks:
-'0  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,48,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
-'1  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,49,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+'0  14  17  ~/code/project1/.env
+|4,48,14,17,1594888736,"~/code/project1/.env"
+'1  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
+|4,49,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
 '2  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,50,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
-'3  25  20  ~/code/sample/.env
-|4,51,25,20,1594802775,"~/code/sample/.env"
-'4  26  17  ~/code/sample/.env
-|4,52,26,17,1594802660,"~/code/sample/.env"
+|4,50,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+'3  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
+|4,51,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+'4  25  20  ~/code/sample/.env
+|4,52,25,20,1594802775,"~/code/sample/.env"
 '5  26  17  ~/code/sample/.env
 |4,53,26,17,1594802660,"~/code/sample/.env"
-'6  26  11  ~/code/sample/.env
-|4,54,26,11,1594802624,"~/code/sample/.env"
+'6  26  17  ~/code/sample/.env
+|4,54,26,17,1594802660,"~/code/sample/.env"
 '7  26  11  ~/code/sample/.env
 |4,55,26,11,1594802624,"~/code/sample/.env"
-'8  19  0  ~/code/sample/.env
-|4,56,19,0,1594802573,"~/code/sample/.env"
+'8  26  11  ~/code/sample/.env
+|4,56,26,11,1594802624,"~/code/sample/.env"
 '9  19  0  ~/code/sample/.env
 |4,57,19,0,1594802573,"~/code/sample/.env"
 
 # Jumplist (newest first):
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1594888736,"~/code/project1/.env"
+-'  1  0  ~/code/project1/.env
+|4,39,1,0,1594888722,"~/code/project1/.env"
+-'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
+|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
 -'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
 |4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
 -'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
@@ -56,6 +64,14 @@
 -'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
 |4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
 -'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
+|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+-'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
+|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+-'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
+|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+-'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
+|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+-'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
 |4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
 -'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
 |4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
@@ -75,6 +91,38 @@
 |4,39,25,20,1594802775,"~/code/sample/.env"
 -'  25  20  ~/code/sample/.env
 |4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802768,"~/code/sample/.env"
 -'  26  17  ~/code/sample/.env
 |4,39,26,17,1594802768,"~/code/sample/.env"
 -'  26  17  ~/code/sample/.env
@@ -107,6 +155,38 @@
 |4,39,26,17,1594802660,"~/code/sample/.env"
 -'  26  17  ~/code/sample/.env
 |4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  17  ~/code/sample/.env
+|4,39,26,17,1594802660,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
+-'  26  11  ~/code/sample/.env
+|4,39,26,11,1594802624,"~/code/sample/.env"
 -'  26  11  ~/code/sample/.env
 |4,39,26,11,1594802624,"~/code/sample/.env"
 -'  26  11  ~/code/sample/.env
@@ -171,86 +251,17 @@
 |4,39,19,0,1594802615,"~/code/sample/.env"
 -'  19  0  ~/code/sample/.env
 |4,39,19,0,1594802615,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  19  0  ~/code/sample/.env
-|4,39,19,0,1594802573,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
--'  1  0  ~/code/sample/.env
-|4,39,1,0,1594802518,"~/code/sample/.env"
 
 # History of marks within files (newest to oldest):
+
+> ~/code/project1/.env
+	*	1594888734	0
+	"	14	17
+	^	14	18
+	.	14	17
+	+	12	16
+	+	13	20
+	+	14	17
 
 > ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
 	*	1594859489	0
