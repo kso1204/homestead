@@ -1,0 +1,67 @@
+[
+    {
+        "name": "composer",
+        "location": "Europe, Canada and Singapore",
+        "url": "https://packagist.org"
+    },
+    {
+        "name": "aliyun",
+        "location": "China",
+        "url": "https://mirrors.aliyun.com/composer"
+    },
+    {
+        "name": "tencent",
+        "location": "China",
+        "url": "https://mirrors.cloud.tencent.com/composer"
+    },
+    {
+        "name": "huawei",
+        "location": "China",
+        "url": "https://mirrors.huaweicloud.com/repository/php"
+    },
+    {
+        "name": "cnpkg",
+        "location": "China",
+        "url": "https://php.cnpkg.org"
+    },
+    {
+        "name": "sjtug",
+        "location": "China",
+        "url": "https://packagist.mirrors.sjtug.sjtu.edu.cn"
+    },
+    {
+        "name": "phpcomposer",
+        "location": "China",
+        "url": "https://packagist.phpcomposer.com"
+    },
+    {
+        "name": "kkame",
+        "location": "South Korea",
+        "url": "https://packagist.kr"
+    },
+    {
+        "name": "hiraku",
+        "location": "Japan",
+        "url": "https://packagist.jp"
+    },
+    {
+        "name": "webysther",
+        "location": "Brazil",
+        "url": "https://packagist.com.br"
+    },
+    {
+        "name": "solidworx",
+        "location": "South Africa",
+        "url": "https://packagist.co.za"
+    },
+    {
+        "name": "indra",
+        "location": "Indonesia",
+        "url": "https://packagist.phpindonesia.id"
+    },
+    {
+        "name": "varun",
+        "location": "India",
+        "url": "https://packagist.in"
+    }
+]

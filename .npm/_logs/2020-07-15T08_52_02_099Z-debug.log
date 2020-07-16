@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'watch' ]
+2 info using npm@6.14.4
+3 info using node@v12.16.2
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info lifecycle @~prewatch: @
+6 info lifecycle @~watch: @
+7 verbose lifecycle @~watch: unsafe-perm in lifecycle true
+8 verbose lifecycle @~watch: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/vagrant/code/sample/node_modules/.bin:/home/vagrant/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+9 verbose lifecycle @~watch: CWD: /home/vagrant/code/sample
+10 silly lifecycle @~watch: Args: [ '-c', 'npm run development -- --watch' ]
+11 silly lifecycle @~watch: Returned: code: 1  signal: null
+12 info lifecycle @~watch: Failed to exec watch script
+13 verbose stack Error: @ watch: `npm run development -- --watch`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:310:20)
+13 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:310:20)
+13 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+14 verbose pkgid @
+15 verbose cwd /home/vagrant/code/sample
+16 verbose Linux 4.15.0-96-generic
+17 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "watch"
+18 verbose node v12.16.2
+19 verbose npm  v6.14.4
+20 error code ELIFECYCLE
+21 error errno 1
+22 error @ watch: `npm run development -- --watch`
+22 error Exit status 1
+23 error Failed at the @ watch script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]

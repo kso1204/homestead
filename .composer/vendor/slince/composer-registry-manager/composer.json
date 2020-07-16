@@ -1,0 +1,34 @@
+{
+    "name": "slince/composer-registry-manager",
+    "description": "Composer mirrors manager",
+    "keywords": ["composer repository", "composer mirror", "switch composer mirror", "composer", "mirror"],
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Slince",
+            "email": "taosikai@yeah.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "composer-plugin-api": "^1.1"
+    },
+    "require-dev": {
+        "composer/composer": "^1.5",
+        "phpunit/phpunit": "^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slince\\Crm\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Slince\\Crm\\Tests\\": "./tests"
+        }
+    },
+    "extra":{
+        "class": "Slince\\Crm\\RepositoryManager"
+    }
+}
