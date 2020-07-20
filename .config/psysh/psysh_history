@@ -47,3 +47,5 @@ exit
 App\134author::create([\012'email'\040=>\040'bar@baz.com',\012'password'\040=>\040bcrypt('password'),\012]);
 app\134author::get();
 exit
+$user\040=\040App\134user::create([\012'name'\040=>\040'John\040doe',\012'email'\040=>\040'john@example.com',\012'password'\040=>\040bcrypt('password')\012]);
+exit
