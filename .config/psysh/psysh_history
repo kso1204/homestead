@@ -95,3 +95,6 @@ $article->tags()->sync([1]);
 $article->tags->pluck('name','id');
 App\134Tag::find(1)->articles;
 App\134Tag::find(2)->articles;
+factory(App\134User::class)->make();
+factory(App\134User::class)->make();
+factory(App\134User::class)->make(['name'=>'Foo']);
