@@ -6,8 +6,8 @@
 5 info lifecycle @~predev: @
 6 info lifecycle @~dev: @
 7 verbose lifecycle @~dev: unsafe-perm in lifecycle true
-8 verbose lifecycle @~dev: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/vagrant/code/sample/node_modules/.bin:/home/vagrant/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-9 verbose lifecycle @~dev: CWD: /home/vagrant/code/sample
+8 verbose lifecycle @~dev: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/vagrant/code/project1/node_modules/.bin:/home/vagrant/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+9 verbose lifecycle @~dev: CWD: /home/vagrant/code/project1
 10 silly lifecycle @~dev: Args: [ '-c', 'npm run development' ]
 11 silly lifecycle @~dev: Returned: code: 1  signal: null
 12 info lifecycle @~dev: Failed to exec dev script
@@ -20,7 +20,7 @@
 13 verbose stack     at maybeClose (internal/child_process.js:1021:16)
 13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
 14 verbose pkgid @
-15 verbose cwd /home/vagrant/code/sample
+15 verbose cwd /home/vagrant/code/project1
 16 verbose Linux 4.15.0-96-generic
 17 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "dev"
 18 verbose node v12.16.2

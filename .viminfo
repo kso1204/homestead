@@ -12,9 +12,9 @@
 ~h
 # Command Line History (newest to oldest):
 :q!
-|2,0,1595235459,,"q!"
+|2,0,1595296313,,"q!"
 :wq!
-|2,0,1595235210,,"wq!"
+|2,0,1595295969,,"wq!"
 :wq1
 |2,0,1594888734,,"wq1"
 
@@ -29,38 +29,216 @@
 # Registers:
 
 # File marks:
-'0  26  15  ~/code/project1/.env
-|4,48,26,15,1595235459,"~/code/project1/.env"
-'1  6  14  ~/code/project1/.env
-|4,49,6,14,1595235210,"~/code/project1/.env"
-'2  6  14  ~/code/project1/.env
-|4,50,6,14,1595235210,"~/code/project1/.env"
-'3  14  17  ~/code/project1/.env
-|4,51,14,17,1594888736,"~/code/project1/.env"
-'4  14  17  ~/code/project1/.env
-|4,52,14,17,1594888736,"~/code/project1/.env"
-'5  14  17  ~/code/project1/.env
-|4,53,14,17,1594888736,"~/code/project1/.env"
-'6  14  17  ~/code/project1/.env
-|4,54,14,17,1594888736,"~/code/project1/.env"
-'7  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,55,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
-'8  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,56,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
-'9  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,57,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
+'0  25  20  ~/code/sample/.env
+|4,48,25,20,1595296313,"~/code/sample/.env"
+'1  11  11  ~/code/project1/.env
+|4,49,11,11,1595296294,"~/code/project1/.env"
+'2  11  11  ~/code/project1/.env
+|4,50,11,11,1595295969,"~/code/project1/.env"
+'3  11  12  ~/code/project1/.env
+|4,51,11,12,1595295859,"~/code/project1/.env"
+'4  11  12  ~/code/project1/.env
+|4,52,11,12,1595295859,"~/code/project1/.env"
+'5  10  0  ~/code/project1/.env
+|4,53,10,0,1595294092,"~/code/project1/.env"
+'6  10  0  ~/code/project1/.env
+|4,54,10,0,1595294092,"~/code/project1/.env"
+'7  10  0  ~/code/project1/.env
+|4,55,10,0,1595294092,"~/code/project1/.env"
+'8  10  0  ~/code/project1/.env
+|4,56,10,0,1595294092,"~/code/project1/.env"
+'9  10  0  ~/code/project1/.env
+|4,57,10,0,1595294092,"~/code/project1/.env"
 
 # Jumplist (newest first):
+-'  25  20  ~/code/sample/.env
+|4,39,25,20,1595296313,"~/code/sample/.env"
+-'  11  11  ~/code/project1/.env
+|4,39,11,11,1595296294,"~/code/project1/.env"
+-'  11  11  ~/code/project1/.env
+|4,39,11,11,1595296294,"~/code/project1/.env"
+-'  11  11  ~/code/project1/.env
+|4,39,11,11,1595295969,"~/code/project1/.env"
+-'  11  11  ~/code/project1/.env
+|4,39,11,11,1595295969,"~/code/project1/.env"
+-'  11  12  ~/code/project1/.env
+|4,39,11,12,1595295859,"~/code/project1/.env"
+-'  11  12  ~/code/project1/.env
+|4,39,11,12,1595295859,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595295849,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595295849,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595295849,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595295849,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595295849,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595295849,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595294092,"~/code/project1/.env"
+-'  10  0  ~/code/project1/.env
+|4,39,10,0,1595294092,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595294085,"~/code/project1/.env"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  1  0  ~/code/project1/package.json
+|4,39,1,0,1595236818,"~/code/project1/package.json"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595235459,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595235459,"~/code/project1/.env"
+-'  26  15  ~/code/project1/.env
+|4,39,26,15,1595235459,"~/code/project1/.env"
 -'  26  15  ~/code/project1/.env
 |4,39,26,15,1595235459,"~/code/project1/.env"
 -'  6  14  ~/code/project1/.env
 |4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235442,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235210,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235210,"~/code/project1/.env"
+-'  6  14  ~/code/project1/.env
+|4,39,6,14,1595235210,"~/code/project1/.env"
 -'  6  14  ~/code/project1/.env
 |4,39,6,14,1595235210,"~/code/project1/.env"
 -'  14  17  ~/code/project1/.env
 |4,39,14,17,1595235190,"~/code/project1/.env"
 -'  14  17  ~/code/project1/.env
 |4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1595235190,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1594888736,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1594888736,"~/code/project1/.env"
+-'  14  17  ~/code/project1/.env
+|4,39,14,17,1594888736,"~/code/project1/.env"
 -'  14  17  ~/code/project1/.env
 |4,39,14,17,1594888736,"~/code/project1/.env"
 -'  1  0  ~/code/project1/.env
@@ -69,200 +247,35 @@
 |4,39,1,0,1594888722,"~/code/project1/.env"
 -'  1  0  ~/code/project1/.env
 |4,39,1,0,1594888722,"~/code/project1/.env"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
-|4,39,1,0,1594859490,"~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803550,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  1  0  ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
-|4,39,1,0,1594803405,"~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
--'  25  20  ~/code/sample/.env
-|4,39,25,20,1594802775,"~/code/sample/.env"
+-'  1  0  ~/code/project1/.env
+|4,39,1,0,1594888722,"~/code/project1/.env"
+-'  1  0  ~/code/project1/.env
+|4,39,1,0,1594888722,"~/code/project1/.env"
 
 # History of marks within files (newest to oldest):
 
+> ~/code/sample/.env
+	*	1595296303	0
+	"	25	20
+	^	25	21
+	.	25	20
+	+	26	17
+	+	25	20
+
 > ~/code/project1/.env
-	*	1595235457	0
-	"	26	15
-	^	6	15
-	.	6	14
+	*	1595296294	0
+	"	11	11
+	^	11	12
+	.	11	12
 	+	12	16
 	+	13	20
 	+	14	17
 	+	6	14
+	+	11	12
+
+> ~/code/project1/package.json
+	*	1595236815	0
+	"	1	0
 
 > ~/.npm/_logs/2020-07-15T09_43_36_130Z-debug.log
 	*	1594859489	0
@@ -271,11 +284,3 @@
 > ~/.npm/_logs/2020-07-15T08_52_02_099Z-debug.log
 	*	1594803549	0
 	"	1	0
-
-> ~/code/sample/.env
-	*	1594802774	0
-	"	25	20
-	^	25	21
-	.	25	20
-	+	26	17
-	+	25	20

@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','WelcomeController@index');
 
 /*
-
 Route::get('auth/login',function(){
     $credentials = [
         'email' => 'john@example.com',
