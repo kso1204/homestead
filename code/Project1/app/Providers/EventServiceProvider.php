@@ -15,8 +15,16 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
+
+        //Registered::class => [
+        //    SendEmailVerificationNotification::class,
+        //],
+        \App\Events\ArticlesEvent::class => [
+            \App\Listeners\ArticlesEventListener::class
+        ],
+
+        \Illuminate\Auth\Events\Login::class=> [
+            \App\Listeners\UsersEventListener::class
         ],
     ];
 
@@ -25,10 +33,22 @@ class EventServiceProvider extends ServiceProvider
      *
      * @return void
      */
+    
     public function boot()
     {
         parent::boot();
 
         //
+
+                    /*
+            \Event::listen('article.created', function($article){
+                var_dump('이벤트를 받았습니다. 받은 데이터는 다음과 같습니다.');
+                var_dump($article->toArray());
+            });*/
+            /*
+            \Event::listen(
+                'article.created',
+                \App\Listeners\ArticlesEventListener::class
+            );*/
     }
 }

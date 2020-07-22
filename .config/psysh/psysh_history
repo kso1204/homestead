@@ -98,3 +98,5 @@ App\134Tag::find(2)->articles;
 factory(App\134User::class)->make();
 factory(App\134User::class)->make();
 factory(App\134User::class)->make(['name'=>'Foo']);
+App\134User::whereEmail('barbara96@example.net')->first();
+exit

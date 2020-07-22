@@ -58,7 +58,11 @@ Route::get('/',function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+/*
+Event::listen('article.created', function($article){
+    var_dump('이벤트를 받았습니다. 받은 데이터는 다음과 같습니다.');
+    var_dump($article->toArray());
+});*/
 /*
 DB::listen(function ($query){
     var_dump($query->sql);
