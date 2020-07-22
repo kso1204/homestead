@@ -100,3 +100,6 @@ factory(App\134User::class)->make();
 factory(App\134User::class)->make(['name'=>'Foo']);
 App\134User::whereEmail('barbara96@example.net')->first();
 exit
+File::get('docs/documentation.md');
+File::get('docs/documentation.md');
+q

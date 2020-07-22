@@ -58,6 +58,53 @@ Route::get('/',function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('mail',function(){
+    //$article= App\Article::with('user')->find(1);
+    
+    $details=[
+        'title'=>'qwqwefwf',
+        'body'=>'wqfqwefqw'
+    ];
+
+    \Mail::to('kso1204@gmail.com')->send(new \App\Mail\OrderShipped($details));
+
+    echo "email has been";
+        
+ 
+});
+
+Route::get('markdown',function(){
+    $text=<<<EOT
+
+    #마크다운 에제 1
+
+    이 문서는 [마크다운][1]로 썻다
+
+    ##순서 없는 목록
+
+    - 첫 번째 항목
+    - 두 번째 항목[^1]
+
+    [1] : http://daringfireball.net/projects/markdown
+
+    [^1] : 두 번째 항목_ http://google.com
+    EOT;
+
+        return app(ParsedownExtra::class)->text($text);
+
+});
+
+Route::get('docs/{file?}',function($file= null){
+    $text = (new App\Documentation)->get($file);
+
+    //dd($text);
+    $extra = new ParsedownExtra();
+
+    return app(ParsedownExtra::class)->text($text);
+    //사용법은 둘 중 편한거
+    //return $extra->text($text);
+});
 /*
 Event::listen('article.created', function($article){
     var_dump('이벤트를 받았습니다. 받은 데이터는 다음과 같습니다.');
