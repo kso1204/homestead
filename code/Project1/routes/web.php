@@ -69,6 +69,7 @@ Route::get('mail',function(){
  
 });
 
+Route::get('docs/images/{image}', 'DocsController@image');
 
 Route::get('docs/{file?}', 'DocsController@show');
 

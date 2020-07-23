@@ -177,6 +177,7 @@ return [
 
 
         Barryvdh\Debugbar\ServiceProvider::class,
+        Intervetion\Image\ImageServiceProvider::class,
     ],
 
     /*
@@ -228,6 +229,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'image' => Intervention\Image\Facades\Image::class,
 
     ],
 
