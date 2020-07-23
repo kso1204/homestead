@@ -17,11 +17,11 @@ class OrderShipped extends Mailable
      * @return void
      */
 
-     public $details;
-    public function __construct($details)
+     public $article;
+    public function __construct($article)
     {
         //
-        $this->details=$details;
+        $this->article=$article;
     }
 
     /**

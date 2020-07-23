@@ -60,19 +60,17 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('mail',function(){
-    //$article= App\Article::with('user')->find(1);
-    
-    $details=[
-        'title'=>'qwqwefwf',
-        'body'=>'wqfqwefqw'
-    ];
+    $article= App\Article::with('user')->find(1);
 
-    \Mail::to('kso1204@gmail.com')->send(new \App\Mail\OrderShipped($details));
+    \Mail::to('kso1204@geni-pco.com')->send(new \App\Mail\OrderShipped($article));
 
     echo "email has been";
         
  
 });
+
+
+Route::get('docs/{file?}', 'DocsController@show');
 
 Route::get('markdown',function(){
     $text=<<<EOT
@@ -94,7 +92,7 @@ Route::get('markdown',function(){
         return app(ParsedownExtra::class)->text($text);
 
 });
-
+/*
 Route::get('docs/{file?}',function($file= null){
     $text = (new App\Documentation)->get($file);
 
@@ -105,6 +103,7 @@ Route::get('docs/{file?}',function($file= null){
     //사용법은 둘 중 편한거
     //return $extra->text($text);
 });
+*/
 /*
 Event::listen('article.created', function($article){
     var_dump('이벤트를 받았습니다. 받은 데이터는 다음과 같습니다.');

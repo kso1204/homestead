@@ -103,3 +103,6 @@ exit
 File::get('docs/documentation.md');
 File::get('docs/documentation.md');
 q
+makrdown('**bolld**');
+markdown('**bolld**');
+markdown('*bolld*');
