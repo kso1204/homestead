@@ -17,6 +17,7 @@ class DocsController extends Controller
 
     public function image($file)
     {
+        /*
         $reqEtag = \Request::getEtags();
         $genEtag = $this->docs->etag($file);
 
@@ -28,6 +29,13 @@ class DocsController extends Controller
 
 
 
+        $image = $this->docs->image($file);
+
+        return response($image->encode('png'),200, [
+            'Content-Type' => 'image/png',
+            'Cache-Control' => 'public, max-age=0',
+            'Etag' => $genEtag,
+        ]);*/
         $image = $this->docs->image($file);
 
         return response($image->encode('png'),200, [

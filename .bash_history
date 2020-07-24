@@ -323,3 +323,240 @@ ls
 cd code
 ls
 exit
+ls
+cd code
+ls
+cd project1
+ls
+php artisan route:list
+php artisan make:mail OrderShipped
+ls
+vi .env
+php artisan restart
+artisan config:cache
+ls
+artisan config:cache
+vi .env
+composer require guzzlehttp/guzzle
+artisan config:cache
+ls
+curl -s --user 'api:YOUR_API_KEY'     https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages     -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>'     -F to=YOU@YOUR_DOMAIN_NAME     -F to=bar@example.com     -F subject='Hello'     -F text='Testing some Mailgun awesomeness!'
+curl -s --user 5d3a45f69376a3f545b16793ff9a6123-ffefc4e4-81448902
+artisan config:cache
+npm run install -no-bin--links
+npm install --no-bin-links
+npm install cross-env
+npm install --no-bin-links cross-env 
+ls
+artisan config:cache
+vi .env
+artisan config:cache
+vi .env
+artisan config:cache
+vi .env
+artisan config:cache
+vi .env
+artisan config:cache
+vi .env
+artisan config:cache
+vi .env
+artisan config:cache
+vi .env
+artisan config:cache
+artisan servce
+artisan serve
+vi .env
+artisan config:cache
+vi .env
+artisan config:cache
+composer require "erusev/parsedown-extra: ~0.7.1"
+composer require "barryvdh/laravel-debugbar"
+git clone git@github.com:laravel/docs.git
+ls
+vi docs.git
+php artisna tinker
+php artisan tinker
+ls
+cd ..
+ls
+cd code
+ls
+cd project1
+ls
+cd laravel
+cd 1
+ls
+cd artisan
+ls
+~ls
+ls
+cd docs
+ls
+cd ..
+php artisan tinker
+php artisan make:model Documentation
+composer update "parsedown-extra"
+cd ..
+git add .
+git commit -m 'documentation 모델'
+git push
+cd code
+cd project1
+ls
+php artisan config:cache
+php artisan cache:clear
+php artisan config:cache
+php artisan cache:clear
+php artisan config:cache
+php artisan cache:clear
+php artisan config:cache
+php artisan cache:clear
+composer dump-autoload
+php artisan tinker
+php artisan make:controller DocsController
+cd ..
+git add .
+git commit -m '컨트롤러와 도우미 함수'
+git push
+cd code
+cd project1
+composer require "intervention/image"
+cd ..
+git add .
+git commit -m '다듬질'
+git push
+cd code
+cd project1
+node --version
+npm --version
+npm install -global gulp
+ls
+chmod 777 node_modules
+npm install -global gulp
+ls
+cd ..
+ls
+cd usr
+cd /usr/lib
+ls
+cd ..
+ls
+cd vargrant
+ls
+cd vagrant
+ls
+cd ..
+cd ~/homestead
+cd ..
+cd /
+ls
+cd home
+ls
+cd vagrant
+ls
+cd cdoe
+cd code
+ls
+cd project1
+chmod 777 /usr/lib/node_modules
+sudo chmod 777 /usr/lib/node_modules
+npm install -global gulp
+npm install --global gulp
+sudo chmod 777 /usr/lib/gulp
+gulp --version
+sudo chmod 777 /usr/lib/gulp
+sudo chmod 777 /usr/bin/gulp
+npm install --global gulp
+npm install --global --no-bin-links gulp
+ls
+gulp
+npm install gulp
+npm install --no-bin-links gulp
+gulp
+ls
+gulp
+gulp -v
+gulp
+npm install font-awesome --save-dev
+gulp
+cd ..
+ls
+cd ..
+ls
+laravel new project2
+ls
+cd project2
+ls
+php artisan serve
+ls
+cd ..
+exit
+cd code
+cd project1
+ls
+php artisan route:list
+php artisan config:cache
+ls
+cd ..
+ls
+cd ..
+ls
+cd project2
+ls
+cd ..
+ls
+cd code
+ls
+laravel new project2
+ls
+cd ..
+laravel new project2
+ls
+rm -rf project2
+ls
+laravel new project2
+ls
+cd project2
+ls
+php artisan down
+php artisan up
+ls
+cd ..
+ls
+cd project2
+ls
+cd .
+cd ..
+rm -rf project2
+ls
+cd ..
+ls
+cd vagrant
+ls
+laravel new project2
+ls
+cd project2
+rm -rf project2
+ls
+cd ..
+rm -rf project2
+cd code
+ls
+rm -rf project2
+laravel new project2
+ls
+cd ..
+ls
+cd project2
+mkdir project2
+cd project2
+ls
+laravel new project2
+cd ..
+ls
+cd vagarnt
+ls
+cd vagrant
+ls
+rm -rf project2
+ls

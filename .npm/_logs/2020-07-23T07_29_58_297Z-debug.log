@@ -1,0 +1,23 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'dev' ]
+2 info using npm@6.14.4
+3 info using node@v12.16.2
+4 verbose stack Error: Failed to parse json
+4 verbose stack Unexpected token o in JSON at position 102 while parsing near '...    "development": node node_modules/cro...'
+4 verbose stack     at parseError (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:470:11)
+4 verbose stack     at parseJson (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:105:26)
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:52:5
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:115:16
+4 verbose stack     at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:63:3)
+5 verbose cwd /home/vagrant/project2/project2
+6 verbose Linux 4.15.0-96-generic
+7 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "dev"
+8 verbose node v12.16.2
+9 verbose npm  v6.14.4
+10 error code EJSONPARSE
+11 error file /home/vagrant/project2/project2/package.json
+12 error JSON.parse Failed to parse json
+12 error JSON.parse Unexpected token o in JSON at position 102 while parsing near '...    "development": node node_modules/cro...'
+13 error JSON.parse Failed to parse package.json data.
+13 error JSON.parse package.json must be actual JSON, not just JavaScript.
+14 verbose exit [ 1, true ]

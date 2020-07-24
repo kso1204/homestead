@@ -28,11 +28,10 @@ class Documentation extends Model
     }
 
     protected function path($file, $dir='docs'){
-        
+        /*
         $file = ends_with($file, ['.md', '.png']) ? $file : $file . '.md';
         $path = base_path($dir."/".$file);
-
-        /*
+*/
         $file = ends_with($file, '.md') ? $file : $file . '.md';
         //$path = base_path('docs'.DIRECTORY_SEPARATOR.$file);
         $path = base_path('docs/'.$file);
@@ -40,7 +39,6 @@ class Documentation extends Model
         if(!File::exists($path)){
             abort(404,'요청하신 파일 x');
         }
-        */
 
         return $path;
     }
