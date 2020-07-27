@@ -8,6 +8,15 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    protected $dates = ['last_login'];
+    
+    public function articles(){
+        return $this->hasMany(Article::class);
+    }
+
+    public function isAdmin(){
+        return ($this->id===1) ? true : false;
+    }
     use Notifiable;
 
     /**

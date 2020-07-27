@@ -28,11 +28,15 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
+
+
     public function boot()
     {
         //
 
         parent::boot();
+
+        Route::model('article', \App\Article::class);
     }
 
     /**
