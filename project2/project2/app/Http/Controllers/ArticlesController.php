@@ -19,7 +19,7 @@ class ArticlesController extends Controller
 
         return view('articles.show',compact('article'));
     }
-    public function index()
+    public function index($slug = null)
     {
         //
         //return __METHOD__ . '은 Article 컬렉션을 조회합니다.';
@@ -32,6 +32,10 @@ class ArticlesController extends Controller
 
        // $articles->load('user'); //지연로드
 
+
+       $query = $slug 
+       ? \App\Tag::whereSlug($slug)->firstOrFail()->articles()
+       : new \App\Article;
 
        $articles = \App\Article::latest()->paginate(3);
        //debug($article->toArray());
@@ -93,6 +97,7 @@ class ArticlesController extends Controller
        $article=$request->user()->articles()->create($requset->all());
 
         if(! $article){
+            $article->tags()->sync($request->input('tags'));
             return back()->with('flash_message','글이 저장되지 않았습니다.')->withInput();
         }
 
@@ -137,6 +142,7 @@ class ArticlesController extends Controller
     {
         //
         $article->update($request->all());
+        $article->tags()->sync($request->input('tags'));
 
         return redirect(route('articles.show',$article->id));
         //return __METHOD__ . '는 사용자의 입력한 폼 데이터로 다음 기본 키를 가진 Article모델을 수정합니다.' .$id;

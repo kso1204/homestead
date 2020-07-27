@@ -24,7 +24,18 @@
                 </textarea>
                 {!! $errors->first('content', '<span class="form-error">:message</span>') !!}
             </div>
-
+            
+            <div class="form-group {{ $errors->has('tags') ? 'has-error' : '' }} ">
+                <label for="tags">태그</label>
+                <select class="form-control" name="tags[]" id="tags" multiple="multiple">
+                    @foreach ($allTags as $tag)
+                        <option value="{{ $tag->id }}" {{ $article->tags->contains($tag->id) ? 'selected="selected"' : '' }}>
+                            {{ $tag->name }}
+                        </option>
+                                                
+                    @endforeach
+                </select>
+                {!! $errors->first('tags', '<span class="form-error">:message</span>') !!}
             <div class='form-group' >
                 
                 <button type="submit" class="btn btn-primary">저장하기</button>

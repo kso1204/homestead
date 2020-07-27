@@ -84,7 +84,10 @@ Route::get('social/{provider}',[
     'uses' => 'SocialController@execute',
 ]);
 
-
+Route::get('tags/{slug}/articles',[
+    'as' => 'tags.articles.index',
+    'uses' => 'ArticlesController@index',
+]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 

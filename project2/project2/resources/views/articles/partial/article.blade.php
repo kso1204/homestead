@@ -12,3 +12,9 @@
 <a href="{{route('articles.show', $article->id)}}">
     {{ $article->title }}
 </a>
+
+<p class="text-muted meta__article">..</p>
+
+@if($viewName==='article.index')
+@include('tags.partial.list', ['tags' => $article->tags])
+@endif
