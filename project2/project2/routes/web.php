@@ -99,3 +99,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('articles','ArticlesController');
+
+Route::resource('attachments','AttachmentsController',['only'=>['store','destory']]);
+
+Route::get('/dropzone', 'ImageController@index');
+Route::post('/dropzone/store','ImageController@store')->name('dropzone.store');
+
+Route::resource('comments', 'CommentsController', ['only' => ['update','destroy']]);
+Route::resource('articles.comments', 'CommentsController', ['only' => 'store']);
+
+Route::post('comments/{comment}/votes',[
+    'as' => 'comments.vote',
+    'uses' => 'CommentsController@vote',
+]);

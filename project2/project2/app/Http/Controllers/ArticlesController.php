@@ -17,7 +17,9 @@ class ArticlesController extends Controller
     {
         //$article=\App\Article::class::findOrFail($id);
 
-        return view('articles.show',compact('article'));
+        $comments = $article->comments()->with('replies')->whereNull('parent_id')->latest()->get();
+
+        return view('articles.show',compact('article','comments'));
     }
     public function index($slug = null)
     {
@@ -53,8 +55,8 @@ class ArticlesController extends Controller
     {
         //
         //return __METHOD__ . '은 Article 컬렉션을 만들기 위한 폼을 담은 뷰를 반환합니다.';
-
-        return view('articles.create');
+        $article = new \App\Article;
+        return view('articles.create', compact('article'));
     }
 
     /**
@@ -93,12 +95,32 @@ class ArticlesController extends Controller
        // $this->validate($request, $rules, $messages);
      
      //  $article=\App\User::find(1)->articles()->create($request->all());
-
-       $article=$request->user()->articles()->create($requset->all());
+        
+       $article=$request->user()->articles()->create($request->all());
 
         if(! $article){
             $article->tags()->sync($request->input('tags'));
             return back()->with('flash_message','글이 저장되지 않았습니다.')->withInput();
+        }
+
+        function attachments_path($path =''){
+            return public_path('files'.($path ? "/".$path : $path)); 
+        }
+        if($request->hasFile('files')){
+            $files = $request->file('files');
+            foreach($files as $file){
+                $filename = str_random().filter_var($file->getClientOriginalName(), FILTER_SANITIZE_URL);
+                $file->move(attachments_path(),$filename);
+            }
+        }
+
+
+        foreach($files as $file){
+            $article->attachments()->create([
+                'filename' => $filename,
+                'bytes' => $file->getSize(),
+                'mime' => $file->getClientMimeType()
+            ]);
         }
 
         var_dump('이벤트를 던집니다.');

@@ -3,6 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\User;
+use App\Article;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -16,6 +17,33 @@ use Illuminate\Support\Str;
 | model instances for testing / seeding your application's database.
 |
 */
+
+$factory->define(Article::class, function (Faker $faker) {
+    
+    $date= $faker->dateTimeThisMonth;
+    return [
+        'title' => $faker->sentence(),
+        'content' => $faker->paragraph(),
+        'created_at' => $date,
+        'updated_at' => $date,
+    ];
+});
+
+$factory->define(App\Comment::class, function (Faker $faker){
+    $articleIds = App\Article::pluck('id')->toArray();
+    $userIds = App\User::pluck('id')->toArray();
+
+    return [
+        'content' => $faker->paragraph,
+        'commentable_type' => App\Article::class,
+        'commentable_id' => function () use ($faker, $articleIds){
+            return $faker->randomElement($articleIds);
+        },
+        'user_id' => function () use ($faker, $userIds){
+            return $faker->randomElement($userIds);
+        },
+    ];
+});
 
 $factory->define(User::class, function (Faker $faker) {
     return [

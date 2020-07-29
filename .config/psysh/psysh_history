@@ -109,3 +109,12 @@ markdown('*bolld*');
 gravatar_url('foo@bar.com')
 gravatar_url('foo@bar.com')
 gravatar_url('foo@bar.com');
+$comment=App\134comment::find(30);
+$comment->user;
+$comment->commentable;
+$comment->commentable;
+$comment->replies
+$comment->parent
+$comment->parent->user;
+$comment->parent->user;
+exit

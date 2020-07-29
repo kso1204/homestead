@@ -14,7 +14,4 @@
 </a>
 
 <p class="text-muted meta__article">..</p>
-
-@if($viewName==='article.index')
-@include('tags.partial.list', ['tags' => $article->tags])
-@endif
+@include ('attachments.partial.list', ['attachments'=> $article->attachments])

@@ -11,6 +11,10 @@ class ArticlesRequest extends FormRequest
      *
      * @return bool
      */
+
+    protected $dontFlash = ['files'];
+    
+
     public function authorize()
     {
         return true;
@@ -28,6 +32,8 @@ class ArticlesRequest extends FormRequest
             'title' => ['required'],
             'content' => ['required', 'min:10'],
             'tags' => ['required','array'],
+            'files' => ['array'],
+            'files.*' => ['mimes:jpg,png,zip,tar', 'max:30000'], 
         ];
     }
 

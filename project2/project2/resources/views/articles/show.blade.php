@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@php $viewName ='articles.show'; @endphp
-
 <div class="page-header">
     <h4>포럼<small> / {{$article->title}}</small></h4>
 </div>
@@ -11,6 +9,12 @@
     @include('articles.partial.article', compact('article'))
 
     <p> {!! $article->content !!}</p>
+
+    <div class="col-md-9">
+        <div vlass="container__comment">
+            @include('comments.index')
+        </div>
+    </div>
 </article>
 
 <div class="text-center action__article">
@@ -21,7 +25,7 @@
     @endcan
     @can('delete', $article)
         
-    <button class="btn btn-danger delete">
+    <button class="btn btn-danger delete" id="deletebutton">
         <i class="fa fa-trash-o"></i> 글 삭제
     </button>
     @endcan
@@ -32,7 +36,7 @@
 </div>
 @stop
 
-@section('scripts')
+@section('script')
     <script>
       
         $.ajaxSetup({
@@ -40,8 +44,10 @@
                 'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
             }
         });
-
-        $('.delete').on('click', function(e){
+        $(document).on('click', '#deletebutton', function () {
+            alert("dd");
+});
+        $('#deletebutton').on('click', function(e){
             alert("dd");
             var articleId = $('article').data('id');
 

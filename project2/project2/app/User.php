@@ -10,6 +10,12 @@ class User extends Authenticatable
 {
     protected $dates = ['last_login'];
     
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
     public function articles(){
         return $this->hasMany(Article::class);
     }
@@ -17,6 +23,12 @@ class User extends Authenticatable
     public function isAdmin(){
         return ($this->id===1) ? true : false;
     }
+    
+    public function votes(){
+        return $this->hasMany(Vote::class);
+    }
+
+    
     use Notifiable;
 
     /**

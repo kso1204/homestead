@@ -32,6 +32,8 @@ class AppServiceProvider extends ServiceProvider
             });
 
             $view->with(compact('allTags'));
+            $view->with('currentUser', auth()->user());
         });
+
     }
 }
