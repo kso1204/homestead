@@ -17,11 +17,14 @@ class ArticlesController extends Controller
     {
         //$article=\App\Article::class::findOrFail($id);
 
+        $article->view_count +=1;
+        $article->save();
+
         $comments = $article->comments()->with('replies')->whereNull('parent_id')->latest()->get();
 
         return view('articles.show',compact('article','comments'));
     }
-    public function index($slug = null)
+    public function index(Request $request, $slug = null)
     {
         //
         //return __METHOD__ . '은 Article 컬렉션을 조회합니다.';
@@ -38,8 +41,18 @@ class ArticlesController extends Controller
        $query = $slug 
        ? \App\Tag::whereSlug($slug)->firstOrFail()->articles()
        : new \App\Article;
+       $query = $query->orderBy(
+           $request->input('sort', 'created_at'),
+           $request->input('order', 'desc')
+       );
+       /*
+       if($keyword = request()->input('q')){
+            $raw = 'MATCH(title,content) AGAINST(? IN BOOLEAN MODE)';
+            $query = $query->whereRaw($raw, [$keyword]);
+       }*/
 
-       $articles = \App\Article::latest()->paginate(3);
+       //$articles = \App\Article::latest()->paginate(3);
+       $articles = $query->paginate(3);
        //debug($article->toArray());
        //dd(view('articles.index', compact('articles'))->render());
         return view('articles.index', compact('articles'));
@@ -96,7 +109,12 @@ class ArticlesController extends Controller
      
      //  $article=\App\User::find(1)->articles()->create($request->all());
         
-       $article=$request->user()->articles()->create($request->all());
+     $payload=array_merge($request->all(), [
+         'notification' => $request->has('notification'),
+         'view_count' => 0,
+     ]);
+
+       $article=$request->user()->articles()->create($payload);
 
         if(! $article){
             $article->tags()->sync($request->input('tags'));
@@ -112,15 +130,6 @@ class ArticlesController extends Controller
                 $filename = str_random().filter_var($file->getClientOriginalName(), FILTER_SANITIZE_URL);
                 $file->move(attachments_path(),$filename);
             }
-        }
-
-
-        foreach($files as $file){
-            $article->attachments()->create([
-                'filename' => $filename,
-                'bytes' => $file->getSize(),
-                'mime' => $file->getClientMimeType()
-            ]);
         }
 
         var_dump('이벤트를 던집니다.');

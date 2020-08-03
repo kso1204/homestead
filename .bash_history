@@ -560,3 +560,143 @@ cd vagrant
 ls
 rm -rf project2
 ls
+git add .
+git commit -m "아티클 기능 구현"
+git push
+cd project2
+php artisan db:seed
+cd ..
+git add .
+git commit -m '태그 기능 구현'
+git push
+cd project2
+mkdir public/files
+chmod -R 775 public/files
+echo 'public/files' >> .gitignore
+php artisan make:migration create_attachments_table.php
+php artisan migrate
+php artisan make:model Attachment
+php artisan config:cache
+php artisan route:list
+php artisan config:cache
+artisan serve down
+artisan server down
+php artisan down
+php artisan up
+php --ini
+vi /etc/php/7.4/cli/php.ini
+npm install dropzone --save-dev
+npm install dropzone --no-bin-links --save-dev
+php artisan make:controller AttachmentsController
+php artisan make:controller AttachmentsController --resoruce
+php artisan make:controller AttachmentsController --resource
+npm run dev
+php artisan route:list
+php artisan make:controller ImageController
+php artisan config:cache
+php artisan make:migration create_comments_table
+php artisan make:model Comment
+php artisan db:seed
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate:refresh
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate --path=database/migrations/2014_10_12_000000_create_users_table.php
+php artisan migrate --path=database/migrations/2014_10_12_000000_create_users_table
+php artisan migrate --path=database/migrations/2014_10_12_000000_create_users_table.php
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate --path=database/migrations/first
+php artisan migrate:status
+php artisan migrate:reset
+php artisan migrate:status
+php artisan migrate
+php artisan migrate:status
+php artisan migrate:reset
+php artisan migrate:status
+php artisan migrate:refresh
+php artisan migrate:reset
+php artisan migrate:status
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate
+php artisan make:migration create_comments_table
+php artisan migrate
+php artisan db:seed
+composer dump-autoload
+php artisan db:seed
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate:refresh
+php artisan migrate
+php artisan db:seed
+php artisan tinker
+php artisan make:request CommentsRequest
+php artian make:controller CommentsController
+php artisan make:controller CommentsController
+php artisan route:list
+php artisan make:migration create_votes_table
+php artisan make:model
+php artisan make:model Vote
+php artisan make:factory VoteFactory
+php artisan make:factory VoteFactory --model=Vote
+php artisan db:seed
+php artisan migrate
+php artisan db:seed
+php artisan route:list
+cd ..
+git add .
+git commit -m '댓글 기능 구현'
+git push
+cd project2
+ls
+php artisan make:migration add_columns_on_articles_table
+php artisan cache:config
+php artisan cache:clear
+php artisan config:cache
+composer dump-autoload
+php artisan route:list
+php artisan event:generate
+php artisan route:list
+php artisan route:cache
+php artisan route:list
+php artisan route:reset
+php artisan route:clear
+php artisan route:cache
+php artisan route:list
+cd ..
+exit
+cd code
+ls
+cd smaple
+cd sample
+php artisan migrate
+php artisan migrate:rollback
+ls
+cd ..
+cd sample
+ls
+php artisan config:cache
+php artisan migrate
+php artisan db:seed
+php artisan route:list
+php artisan config:cache
+cd ..
+ls
+laravel new mice
+ls
+cd mcie
+cd mice
+ls
+cd ..
+exit

@@ -7,7 +7,7 @@
 
         <hr/>
 
-        <form  action="{{ route('articles.store') }}" method="POST" enctype="multipart/form-data" class="dropzone">
+        <form  action="{{ route('articles.store') }}" method="POST" enctype="multipart/form-data" >
             <!-- 이제 사용하지 않음 laravel7 { csrf_filed() !!} -->
             @csrf <!-- 이 부분을 사용하지 않아서 계속 419 에러가 났다 -->
             

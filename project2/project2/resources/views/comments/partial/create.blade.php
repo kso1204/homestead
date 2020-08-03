@@ -2,8 +2,10 @@
    
 
     <div class="media-body">
-        <form mehtod="POST" action = " {{ route('articles.comments.store', $article->id ) }} "
-            class="form-horizontal">
+
+        
+        
+        <form  action="{{ route('articles.comments.store', $article->id) }}" method="POST">
             @csrf
 
 

@@ -26,6 +26,15 @@
                 {!! $errors->first('tags', '<span class="form-error">:message</span>') !!}
             </div>
 
+            <div class="form-group  ">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="notification" value="{{old('notification',1)}}" checked>
+                        댓글이 작성되면 이메일 알림 받기
+                    </label>
+                </div>
+            </div>
+
             <div class="form-group">
                 <label for="mydropzone">파일</label>
                 <div id="mydropzone" ></div>

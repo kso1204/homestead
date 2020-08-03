@@ -13,14 +13,19 @@ class CommentsController extends Controller
         $this->middleware('auth');
     }
 
-    public function store(\App\Http\Requests\CopmmentsRequest $request, \App\Article $article)
+    public function store(\App\Http\Requests\CommentsRequest $request, \App\Article $article)
     {
+
+
         $comment = $article->comments()->create(array_merge(
             $request->all(),
             ['user_id' => $request->user()->id]
         ));
 
-        flash()->success('작성하신 댓글을 저장했습니다.');
+        //flash()->success('작성하신 댓글을 저장했습니다.');
+
+        event(new \App\Events\CommentsEvent($comment));
+
 
         return redirect(route('articles.show', $article->id).'#comment_'.$comment->id);
     }

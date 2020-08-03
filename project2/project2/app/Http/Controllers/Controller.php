@@ -11,9 +11,9 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function index(){
-        flash('환영합니다.');
-
-        return view('home');
-    }
+    //public function index(){
+    //    flash('환영합니다.');
+//
+    //    return view('home');
+    //}
 }

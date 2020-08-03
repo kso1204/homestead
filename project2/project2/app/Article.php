@@ -8,10 +8,15 @@ class Article extends Model
 {
     protected $with = ['user'];
     
-    protected $fillable = ['title','content'];
+    protected $fillable = ['title','content','notification','view_count',];
 
     public function user(){
         return $this->belongsTo(User::class);
+    }
+
+    public function getCommentCountAttribute()
+    {
+        return (int) $this->comments->count();
     }
 
     public function comments()
