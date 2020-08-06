@@ -1,0 +1,27 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   '/home/vagrant/code/larticles_api/resources/assets/js/app.js',
+1 verbose cli   '/home/vagrant/code/larticles_api/resources/assets/sass/app.scss'
+1 verbose cli ]
+2 info using npm@6.14.4
+3 info using node@v12.16.2
+4 verbose npm-session ab85c7ccf9cb6c29
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData error for file:/home/vagrant/code/larticles_api/resources/assets/js/app.js Could not install "resources/assets/js/app.js" as it is not a directory and is not a file with a name ending in .tgz, .tar.gz or .tar
+8 silly fetchPackageMetaData error for file:/home/vagrant/code/larticles_api/resources/assets/sass/app.scss Could not install "resources/assets/sass/app.scss" as it is not a directory and is not a file with a name ending in .tgz, .tar.gz or .tar
+9 timing stage:rollbackFailedOptional Completed in 0ms
+10 timing stage:runTopLevelLifecycles Completed in 6486ms
+11 verbose stack Error: ENOTDIR: not a directory, open '/home/vagrant/code/larticles_api/resources/assets/js/app.js/package.json'
+12 verbose cwd /home/vagrant/code/larticles_api
+13 verbose Linux 4.15.0-96-generic
+14 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "--save" "/home/vagrant/code/larticles_api/resources/assets/js/app.js" "/home/vagrant/code/larticles_api/resources/assets/sass/app.scss"
+15 verbose node v12.16.2
+16 verbose npm  v6.14.4
+17 error code ENOLOCAL
+18 error Could not install "resources/assets/js/app.js" as it is not a directory and is not a file with a name ending in .tgz, .tar.gz or .tar
+19 verbose exit [ 1, true ]

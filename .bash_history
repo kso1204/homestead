@@ -700,3 +700,94 @@ cd mice
 ls
 cd ..
 exit
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  cd code
+ls
+composer create-project --prefer-dist cretueusebiu/laravel-vue-spa
+ls
+cd laravel-vue-spa
+ls
+cp .env.example .env
+php artisan migrate
+npm install --no-bin-links
+npm run dev
+ls
+cd ..
+ls
+git clone https://github.com/bradtraversy/larticles_api.git
+ls
+cd larticles_api/
+ls
+composer install
+ls
+cp .env.example .env
+ls
+npm install --no-bin-links
+npm run dev
+ls
+php artisan migrate
+php artisan db:seed
+exit
+ls
+cd code
+ls
+cd larticles_api/
+ls
+npm run dev
+ls
+rm -rf node_modules
+npm run dev
+ls
+rm -rf node_modules
+npm install --no-bin-links
+npm audit fix
+npm run dev
+npm remove webpack -g
+npm i webpack --save-dev
+npm i webpack --save-dev --no-bin-links
+npm run dev
+npm -v
+run npm install webpack --save --no-bin-links
+npm install webpack --save --no-bin-links
+npm run dev
+npm install cross-env -D
+npm install cross-env -D --no-bin-links
+npm run dev
+rm -rf node_modules
+rm -rf package-lock.json
+npm install --no-bin-links
+npm run dev
+ls
+npm run watch
+php artisan view:cache
+npm run dev
+npm run watch
+exit
+ls
+cd code
+ls
+cd mice
+ls
+npm run watch
+ls
+cd ..
+ls
+cd larticles_api/
+ls
+npm run watch
+cd ..
+ls
+cd laravel-vue-spa/
+ls
+php artisan route:list
+cd ..
+cd code
+cd mice
+ls
+php artisan make:route papers --api
+php artisan make:controller --resource--api
+php artisan make:resource UserCollection
+php artisan make:controller API/PaperController --api
+ls
+cd ..
+ls
+exit

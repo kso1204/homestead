@@ -12,8 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
-
-
-mix.copy('node_modules/dropzone/dist/dropzone.css','public/css/all.css')
-mix.copy('node_modules/dropzone/dist/dropzone.js','public/js/all.js')
+    .sass('resources/sass/app.scss', 'public/css')
+    .webpackConfig({
+        output: {
+          publicPath: 'http://mice.test/'
+        }
+      })
