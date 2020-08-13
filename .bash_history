@@ -791,3 +791,220 @@ ls
 cd ..
 ls
 exit
+ls
+cd code
+ls
+laravel new mice_vue
+ls
+cd mice_vue
+cd ..
+git add .
+git commit -m 'Vue + laravel'
+git push
+ls
+cd code
+ls
+cd mice_vue
+ls
+npm install vue-router --no-bin-links
+npm run dev
+php artisan make:controller SpaController
+npm run watch
+npm install vue --no-bin-links
+vue -v
+vue -version
+npm run watch
+php artisan make:seeder UsersTableSeeder
+php artisan migrate
+php artisan db:seed
+php artisan make:controller UsersController -api
+php artisan make:controller UsersController --api
+php artisan make:controller Api/UsersController 
+php artisan make:resource UserResource
+npm run watch
+php artisan route:list
+npm run watch
+cd ..
+git add .
+git commit -m "larave+vue example"
+git push
+ls
+cd code
+ls
+laravel new mice_spa
+ls
+cd mice_spa
+ls
+exit
+cd code
+cd mice
+ls
+php artisan route:list
+cd ..
+cd mice_vue
+ls
+cd code
+ls
+cd mice_vue
+php artisan route:list
+cd ..
+cd code
+cd laravel-vue-spa/
+php artisan route:list
+cd ..
+cd mice_vue
+npm run watch
+Php artisan ui vue --auth
+php artisan ui vue --auth
+composer require laravel/ui
+php artisan ui vue --auth
+npm run dev
+npm run dev --no-bin-links
+ls
+cd ..
+rm -rf mice_vue
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd vaganrt
+ls
+cd home
+ls
+cd vagrant
+ls
+cd code
+ls
+git init
+ls
+git config core.sparseCheckout true
+git remote add -f origin https://github.com/kso1204/homestead.git
+echo "mice_vue" >> .git/info/sparse-checkout
+git pull origin master
+ls
+cd mice_vue
+ls
+cd code
+ls
+mv ./mice_vue ../mice_vue
+exit
+cd code
+cd mice_vue
+composer dump-autoload
+composer install
+npm install --no-bin-links
+ls
+cd ..
+ls
+cd code
+ls
+cd mice_spa
+ls
+npm install vue --no-bin-links
+npm install vue-router --no-bin-links
+npm run watch
+npm run dev
+npm run watch
+php artisan route:list
+npm run watch
+php artisan migrate
+npm run watch
+php artisan make:resource PapersResource
+php artisan make:controller Api/PapersController
+php artisan make:model Paper
+php aritsan make:migration create_papers_table
+php artisan make:migration create_papers_table
+npm run watch
+php artisan migrate
+npm run watch
+cd ..
+cd mice
+php artisan route:list
+cd ..
+cd mice_spa
+ls
+npm run watch
+npm install vform --no-bin-links
+npm run watch
+composer require laravel/ui
+php artisan ui vue --auth
+npm run dev
+npm install --no-bin-links && npm run dev
+npm run dev
+npm remove webpack -g
+npm i webpack --save-dev
+npm i webpack --save-dev --no-bin-links
+npm run webpack
+npm run dev
+npm remove webpack -g
+npm i webpack --save-dev --no-bin-links
+npm run webpack
+npm run dev
+npm run dev --no-bin-links
+npm uninstall webpack
+npm i -D webpack
+npm i -D webpack --no-bin-links
+npm run dev
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+npm run watch
+composer require laravel/sanctum
+php artisan make:controller Api/LoginController
+npm run watch
+npm run dev --no-bin-links
+npm run watch
+browser-sync --version
+npm install -g browser-sync --no-bin-links
+npm run watch
+npm install brower-sync --save-dev --production=false --no-bin-links
+npm install browser-sync --save-dev --production=false --no-bin-links
+npm run watch
+npm install browser-sync-webpack-plugin@2.0.1 --save-dev --production=false --no-bin-links
+npm run watch
+d ..
+cd ..
+ls
+cd code
+ls
+rename project2 project2_backup
+mv project2 project2_backup
+ls
+laravel new project2
+ls
+cd project2
+ls
+cd ..
+exit
+ls
+cd code
+ls
+cd project2
+ls
+cd ..
+mv project2 spa
+ls
+cd spa
+ls
+cd ..
+laravel new spa2
+ls
+rm -rf spa2
+ls
+cd ..
+exit
+ls
+laravel new spa2
+ls
+cd spa
+ls
+cd code
+ls
+laravel new spa2
+ls
+cd spa
+ls
+cd ..
+exit

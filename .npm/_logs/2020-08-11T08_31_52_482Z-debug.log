@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'brower-sync',
+1 verbose cli   '--save-dev',
+1 verbose cli   '--production=false',
+1 verbose cli   '--no-bin-links'
+1 verbose cli ]
+2 info using npm@6.14.4
+3 info using node@v12.16.2
+4 verbose npm-session 66e3c9c7b4692cdb
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 404 https://registry.npmjs.org/brower-sync 701ms
+8 http fetch GET 404 https://registry.npmjs.org/brower-sync 613ms
+9 silly fetchPackageMetaData error for brower-sync@latest 404 Not Found - GET https://registry.npmjs.org/brower-sync - Not found
+10 timing stage:rollbackFailedOptional Completed in 1ms
+11 timing stage:runTopLevelLifecycles Completed in 6494ms
+12 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/brower-sync - Not found
+12 verbose stack     at /usr/lib/node_modules/npm/node_modules/npm-registry-fetch/check-response.js:104:15
+12 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+13 verbose statusCode 404
+14 verbose pkgid brower-sync@latest
+15 verbose cwd /home/vagrant/code/mice_spa
+16 verbose Linux 4.15.0-96-generic
+17 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "brower-sync" "--save-dev" "--production=false" "--no-bin-links"
+18 verbose node v12.16.2
+19 verbose npm  v6.14.4
+20 error code E404
+21 error 404 Not Found - GET https://registry.npmjs.org/brower-sync - Not found
+22 error 404
+23 error 404 'brower-sync@latest' is not in the npm registry.
+24 error 404 You should bug the author to publish it (or use the name yourself!)
+25 error 404 Note that you can also install from a
+26 error 404 tarball, folder, http url, or git url.
+27 verbose exit [ 1, true ]
