@@ -1,6 +1,6 @@
 <template> 
   <div id="app">
-    <div>
+    <div v-if="$store.state.user">
       <!--========== ADMIN SIDE MENU one ========-->
       <div class="_1side_menu" >
         <div class="_1side_menu_logo">
@@ -18,9 +18,20 @@
           <!--~~~ MENU LIST ~~~~~~-->
           <div class="_1side_menu_list">
             <ul class="_1side_menu_list_ul">
-              <li> <router-link to="/"><Icon type="ios-speedometer" /> DashBoard </router-link></li>
+              <li v-for="(menuItem,i) in permission" :key="i" v-if="permission.length && menuItem.read"> 
+                
+                <router-link :to="menuItem.name"><Icon type="ios-speedometer" /> {{menuItem.resourceName}} </router-link>
+                
+                </li>
+              <li> <a href="/logout"><Icon type="ios-speedometer" /> Logout </a></li>
+              
+              <!-- 
               <li> <router-link to="/tags"><Icon type="ios-speedometer" /> Tags </router-link></li>
               <li> <router-link to="/category"><Icon type="ios-speedometer" /> category </router-link></li>
+              <li> <router-link to="/adminusers"><Icon type="ios-speedometer" /> adminusers </router-link></li>
+              <li> <router-link to="/role"><Icon type="ios-speedometer" /> role management </router-link></li>
+              <li> <router-link to="/assignRole"><Icon type="ios-speedometer" /> role assign </router-link></li>
+              <li> <a href="/logout"><Icon type="ios-speedometer" /> Logout </a></li> -->
             </ul>
           </div>
         </div>
@@ -45,3 +56,20 @@
     	<router-view/>
   </div>
 </template>
+
+<script>
+  export default {
+    props: ['user', 'permission'],
+
+    data (){
+      return {
+        isLoggedIn : false,
+      }
+    },
+    created(){
+      this.$store.commit('updateUser',this.user)
+      console.log(this.user)
+      console.log(this.permission)
+    }
+  }
+</script>

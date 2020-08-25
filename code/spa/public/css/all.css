@@ -3117,6 +3117,10 @@ p {
 .table_image img{
   width: 40px;
 }
+
+.cetner_button{
+ margin-top: 10px; 
+}
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

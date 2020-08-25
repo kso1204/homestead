@@ -44,7 +44,7 @@
 				 <Page :total="100" />
 				
 				<!-- tag adding modal -->
-				<Modal
+				<Modal 
         v-model="addModal"
         title="Category"
 		:mask-closable = "false"
@@ -75,7 +75,7 @@
 
         <div class="demo-upload-list" v-if="data.iconImage"> 
 
-            <img :src ="`/uploads/${data.iconImage}`"/>
+            <img :src ="data.iconImage"/>
             <div class="demo-upload-list-cover table_image">
                 <Icon type="ios-trash-outline" @click.native="deleteImage()"></Icon>
             </div>
@@ -122,7 +122,7 @@
 
         <div class="demo-upload-list" v-if="editData.iconImage"> 
 
-            <img :src ="`${editData.iconImage}`"/>
+            <img :src ="editData.iconImage"/>
             <div class="demo-upload-list-cover table_image">
                 <Icon type="ios-trash-outline" @click.native="deleteImage(false)"></Icon>
             </div>
@@ -135,7 +135,7 @@
     </Modal>
 	<!-- tag delete modal -->
 
-	<Modal v-model="deleteModal" width="360">
+	<!-- <Modal v-model="deleteModal" width="360">
         <p slot="header" style="color:#f60;text-align:center">
             <Icon type="ios-information-circle"></Icon>
             <span>Delete confirmation</span>
@@ -147,14 +147,17 @@
         <div slot="footer">
             <Button type="error" size="large" long :loading="isDeleting" :disabled="isDeleting"  @click="deleteTag">Delete</Button>
         </div>
-    </Modal>
-
+    </Modal> -->
+			<deleteModal></deleteModal>
 			</div>
 		</div>
     </div>
 </template>
 
 <script>
+
+import deleteModal from '../components/deleteModal'
+import {mapGetters} from 'vuex'
 
 	export default {
 		
@@ -189,7 +192,7 @@
 		async addCategory(){
 			if(this.data.categoryName.trim()=='') return this.e(' Category is Required')
             if(this.data.iconImage.trim()=='') return this.e('Icon is Required')
-            this.data.iconImage = `/uploads/${this.data.iconImage}`
+            this.data.iconImage = `${this.data.iconImage}`
 			const res = await this.callApi('post', 'app/create_category', this.data)
 			if(res.status===201){
                 this.categoryLists.unshift(res.data);
@@ -246,13 +249,26 @@
             this.editModal=true
             this.isEditingItem= true
 		},showDeleteModal(category, i){
+
+			const deleteModalObj = {
+				showDeleteModal : true,
+				deleteUrl : 'app/delete_category',
+				data : category,
+				deletingIndex: i,
+				isDeleted: false,
+			}
+
+			this.$store.commit('setDeletingModalObj', deleteModalObj)
+
+			console.log('delete method called')
+			/* 
 			this.deleteModal=true
 			//this.$set(deleteModal, 'isDeleting', true)
 			//위에는 이 부분이 안 된다.. 제대로 이해를 못한듯?
 			this.deleteItem = category
-			this.index = i
+			this.index = i */
 
-		},
+		},/* 
 		async deleteTag(){
 			this.isDeleting=true
 			//this.$set(deleteModal, 'isDeleting', true)
@@ -272,16 +288,16 @@
 
 			this.deleteModal=false
 			this.isDeleting =false
-        },
+        }, */
         
         handleSuccess (res, file) {
+            res = `/uploads/${res}`
             if(this.isEditingItem)
             {
-                res = `/uploads/${res}`
                 return this.editData.iconImage = res
             }
             this.data.iconImage = res
- 
+			console.log(res)
             //file.url = 'https://o5wwk8baw.qnssl.com/7eb99afb9d5f317c912f08b5212fd69a/avatar';
             //file.name = '7eb99afb9d5f317c912f08b5212fd69a';
         },
@@ -373,7 +389,23 @@
 		}else{
 			 this.swr()
 		}
-	}
+	},
+
+	components : {
+		deleteModal
+	},
+
+	computed :	{
+        ...mapGetters(['getDeleteModalObj'])
+	},
+
+	watch :{
+		getDeleteModalObj(obj){
+			if(obj.isDeleted){
+				this.categoryLists.splice(obj.deletingIndex,1)
+			}
+		}
+	},
 
 	/*
 		async created(){

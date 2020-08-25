@@ -5,14 +5,14 @@
 				
 				<!--~~~~~~~ TABLE ONE ~~~~~~~~~-->
 				<div class="_1adminOverveiw_table_recent _box_shadow _border_radious _mar_b30 _p20">
-					<p class="_title0">Tags <Button @click="addModal=true"><Icon type="md-add" /> Add Tag</Button> </p>
+					<p class="_title0">Role Management <Button @click="addModal=true"><Icon type="md-add" /> Add a new role</Button> </p>
 
 					<div class="_overflow _table_div">
 						<table class="_table">
 								<!-- TABLE TITLE -->
 							<tr>
 								<th>ID</th>
-								<th>Tag name</th>
+								<th>Role type</th>
 								<th>Created at</th>
 								<th>Action</th>
 							</tr>
@@ -20,13 +20,13 @@
 
 
 								<!-- ITEMS -->
-							<tr v-for="(tag,i) in tags" :key="i" v-if="tags.length">
-								<td>{{tag.id}}</td>
-								<td class="_table_name">{{tag.tagName}}</td>
-								<td>{{tag.created_at}}</td>
+							<tr v-for="(role,i) in roles" :key="i" v-if="roles.length">
+								<td>{{role.id}}</td>
+								<td class="_table_name">{{role.roleName}}</td>
+								<td>{{role.created_at}}</td>
 								<td>
-									<Button type="info" size="small" @click="showEditModal(tag)">Edit</Button>
-    								<Button type="error" size="small" @click="showDeleteModal(tag, i)" :loading="tag.isDeleting">Delete</Button>
+									<Button type="info" size="small" @click="showEditModal(role)">Edit</Button>
+    								<Button type="error" size="small" @click="showDeleteModal(role, i)" :loading="role.isDeleting">Delete</Button>
 								</td>
 							</tr>
 								<!-- ITEMS -->
@@ -42,15 +42,15 @@
 				<!-- tag adding modal -->
 				<Modal
         v-model="addModal"
-        title="Common Modal dialog box title"
+        title="Add role"
 		:mask-closable = "false"
 		:closable = "false"
 		>
-		<Input v-model="data.tagName" placeholder="Add Tag name..." />
+		<Input v-model="data.roleName" placeholder="Role name..." />
 
 		 <div slot="footer">
 			<button type="error" @click="addModal=false">close</button>
-			<button type="primary" @click="addTag" :disabled="isAdding" :loading="isAdding" >{{ isAdding? "Adding.." : "Addtag" }}</button>
+			<button type="primary" @click="add" :disabled="isAdding" :loading="isAdding" >{{ isAdding? "Adding.." : "Add Role" }}</button>
 		</div>
     </Modal>
 
@@ -62,11 +62,11 @@
 		:mask-closable = "false"
 		:closable = "false"
 		>
-		<Input v-model="editData.tagName" placeholder="Add Tag name..." />
+		<Input v-model="editData.roleName" placeholder="Edit Role name..." />
 
 		 <div slot="footer">
 			<button type="error" @click="editModal=false">close</button>
-			<button type="primary" @click="editTag" :disabled="isAdding" :loading="isAdding" >{{ isAdding? "editing.." : "Edittag" }}</button>
+			<button type="primary" @click="edit" :disabled="isAdding" :loading="isAdding" >{{ isAdding? "editing.." : "Edit Role" }}</button>
 		</div>
     </Modal>
 
@@ -102,14 +102,14 @@ import {mapGetters} from 'vuex'
 	data(){
 		return {
 			data : {
-				tagName: ''
+				roleName: ''
 			},
 			addModal : false,
 			editModal : false,
 			isAdding : false,
-			tags: [],
+			roles: [],
 			editData :{
-				tagName: ''
+				roleName: ''
 			},
 			index: -1,
 			//deleteModal : false,
@@ -121,18 +121,18 @@ import {mapGetters} from 'vuex'
 	},
 
 	methods :{
-		async addTag(){
-			//if(this.data.tagName.trim()=='') return this.e('Tag name is Required')
-			const res = await this.callApi('post', 'app/create_tag', this.data)
+		async add(){
+			if(this.data.roleName.trim()=='') return this.e('Tag roleName is Required')
+			const res = await this.callApi('post', 'app/create_role', this.data)
 			if(res.status===201){
-				this.tags.unshift(res.data);
-				this.s('Tag has been added Success')
+				this.roles.unshift(res.data);
+				this.s('Role has been added Success')
 				this.addModal=false
-				this.data.tagName= ''
+				this.data.roleName= ''
 			}else{
 				if(res.status==422){
-					if(res.data.errors.tagName){
-						this.i(res.data.errors.tagName[0])
+					if(res.data.errors.roleName){
+						this.i(res.data.errors.roleName[0])
 					}
 					
 				}else{
@@ -141,15 +141,15 @@ import {mapGetters} from 'vuex'
 			}
 		},
 		
-		async editTag(){
-			const res = await this.callApi('post', 'app/edit_tag', this.editData)
+		async edit(){
+			const res = await this.callApi('post', 'app/edit_role', this.editData)
 			if(res.status===200){
 				this.s('Tag has been edit Success')
 				this.editModal=false
 			}else{
 				if(res.status==422){
-					if(res.data.errors.tagName){
-						this.i(res.data.errors.tagName[0])
+					if(res.data.errors.roleName){
+						this.i(res.data.errors.roleName[0])
 					}
 					
 				}else{
@@ -157,12 +157,8 @@ import {mapGetters} from 'vuex'
 				}
 			}
 		},
-		showEditModal(tag){
-			let obj = {
-				id : tag.i,
-				tagName : tag.tagName
-			}
-			this.editData = obj
+		showEditModal(role){
+			this.editData = role
 			//this.editData = tag;
 			this.editModal=true
 		},showDeleteModal(tag, i){
@@ -261,16 +257,16 @@ import {mapGetters} from 'vuex'
 		}
 	},
 
-	/*
 		async created(){
-			const res = await this.callApi('post', 'app/create_tag', {tagName: 'testtag'});
+			const res = await this.callApi('get', 'app/get_roles');
 			if(res.status==200){
-				//console.log(res)
+				this.roles=res.data;
 			}else{
 				console.log(res)
 				console.log('running')
-			}
-		}*/
+            }
+        }
+		
 	}
 
 </script>
